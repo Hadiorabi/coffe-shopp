@@ -62,6 +62,7 @@ let i=0;
 // .map1️⃣ Loops through each item in categories 2️⃣ Transforms each item into a new format (HTML code in your case) 3️⃣ Creates a new array with the modified data
 document.getElementById('root').innerHTML=categories.map((item)=>{
     var { image,title,price}=item;
+    // Generating the Product Card HTML
     return(
 // This is a template literal (backticks ``) in JavaScript that generates an HTML structure dynamically.
         // div boxPurpose: Creates a wrapper for each product card.
@@ -82,10 +83,15 @@ document.getElementById('root').innerHTML=categories.map((item)=>{
     )
 }).join('')
 var cart=[];
+// displaycart(); → Calls displaycart() to update the cart display.
+
 function addtocart(a){
     cart.push({...categories[a]});
     displaycart();
 }
+// cart.splice(a,1) → Removes one item at index a in the cart array.
+
+// displaycart(); → Updates the cart display after removal.
 function delElement(a){
     cart.splice(a,1);
     displaycart();
