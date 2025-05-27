@@ -122,8 +122,8 @@ color: white;
     height: 110px;
 }
 h2{
-    font-size: 10px;
-    color :red;
+    font-size: 20px;
+    color :black;
       border: 1px solid goldenrod;
 
 }
@@ -142,10 +142,11 @@ button:hover{
     background-color: #333;
 }
 .tittle{
-    border: 10px solid goldenrod;
-    color: brown;
+    /* border: 10px solid goldenrod; */
+        font-size: 30px;
+    color: black;
     font-size: large;
-    background-color: white;
+    /* background-color: white; */
 }
 .cart-item{
     display: flex;
@@ -186,10 +187,10 @@ justify-content: center;
     text-align: center;
     color: white;
 }
-.card{
+/* .card{
        border: 10px solid goldenrod;
 
-}
+} */
 /* styles.css */
 body {
     font-family: Arial, sans-serif;
